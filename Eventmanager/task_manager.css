@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 50px;
+}
+
+/* Parent Card */
+.parent_card {
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    display: flex;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.parent_card:hover {
+    background: linear-gradient(to right, #2980b9, #1f6781);
+    transform: scale(1.02); /* Slightly scale on hover */
+}
+
+/* Inner Card */
+.card {
+    background-color: #ecf0f1;
+    width: 550px;
+    height: 160px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Styling */
+input {
+    padding: 10px 15px;
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:hover,
+input:focus {
+    border-color: #2980b9;
+}
+
+/* Button Styling */
+button {
+    width: 80px;
+    margin-left: 10px;
+    padding: 12px 20px;
+    border: 2px solid #2ecc71;
+    border-radius: 12px;
+    background-color: #2ecc71;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Heading Styles */
+.div_h1 {
+    background-color: #bdc3c7;
+    width: 700px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-size: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Parent Div for Heading (h1) */
+.parent_div_h1 {
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    display: grid;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Delete Symbol */
+.deleteSymbolSpan {
+    margin: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+.deleteSymbolSpan:hover {
+    color: #c0392b;
+}

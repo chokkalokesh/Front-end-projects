@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #3498db;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+select:hover,
+select:focus {
+    border-color: #2980b9;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.day-box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    border-radius: 8px; /* Rounded corners for a more modern look */
+}
+
+.green-dot,
+.red-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.green-dot {
+    background-color: #27ae60; /* Vibrant green color */
+
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(100%)
+}
+
+.red-dot {
+    background-color: #e74c3c; /* Bold red color */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(100%)
+}
+
+.week-day {
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px; /* Slight border radius for a softer look */
+}
+
+.day-box:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.txtcontent {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
